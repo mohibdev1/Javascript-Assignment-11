@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .container {
+      display: flex;
+      gap: 20px;
+    }
+  .phone {
+    text-align: center;
+    cursor: pointer;
+    
+  }
+
+  .phone img {
+    width: 120px;
+    height: 180px;        /* 👈 same height */
+    object-fit: contain; /* image distort nahi hogi */
+    border: 1px solid #999;
+    padding: 5px;
+    background: #fff;
+  }
+  </style>
+</head>
+<body>
+    <a href="#" onclick="showAlert()">Click me</a>
+    
+<h2>Mobile Phone lookup</h2>
+
+<div class="container">
+  <div class="phone" onclick="buyPhone('iPhone 6 Plus')">
+    <img src="ipone6.png" alt="iPhone">
+    <p>iPhone6Plus</p>
+  </div>
+
+  <div class="phone" onclick="buyPhone('Galaxy S6 Edge Plus')">
+    <img src="sam.png" alt="Samsung">
+    <p>GalaxyS6EdgePlus</p>
+  </div>
+
+  <div class="phone" onclick="buyPhone('V10')">
+    <img src="lg.jpg" alt="LG V10">
+    <p>V10</p>
+  </div>
+
+  <div class="phone" onclick="buyPhone('Huawei P8')">
+    <img src="huawei.png" alt="Huawei">
+    <p>HuaweiP8</p>
+  </div>
+</div>
+    <script src="app.js"></script>
+</body>
+</html>
