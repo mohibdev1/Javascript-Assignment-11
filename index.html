@@ -4,31 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-    .container {
-      display: flex;
-      gap: 20px;
-    }
-  .phone {
-    text-align: center;
-    cursor: pointer;
-    
-  }
-
-  .phone img {
-    width: 120px;
-    height: 180px;        /* 👈 same height */
-    object-fit: contain; /* image distort nahi hogi */
-    border: 1px solid #999;
-    padding: 5px;
-    background: #fff;
-  }
-  </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <p>Q1:</p>
     <a href="#" onclick="showAlert()">Click me</a>
     
-<h2>Mobile Phone lookup</h2>
+<h2>Q2: Mobile Phone lookup</h2>
 
 <div class="container">
   <div class="phone" onclick="buyPhone('iPhone 6 Plus')">
@@ -42,7 +24,7 @@
   </div>
 
   <div class="phone" onclick="buyPhone('V10')">
-    <img src="lg.jpg" alt="LG V10">
+    <img src="lg2.png" alt="LG V10">
     <p>V10</p>
   </div>
 
@@ -51,6 +33,56 @@
     <p>HuaweiP8</p>
   </div>
 </div>
+<h3>Q3: Student Records</h3>
+
+<table id="studentTable">
+  <tr>
+    <th>Index</th>
+    <th>Name</th>
+    <th>Class</th>
+    <th>Action</th>
+  </tr>
+
+  <tr>
+    <td>0</td>
+    <td>Jhone</td>
+    <td>10</td>
+    <td><button onclick="deleteRow(this)">Delete</button></td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Doe</td>
+    <td>9</td>
+    <td><button onclick="deleteRow(this)">Delete</button></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Mark</td>
+    <td>10</td>
+    <td><button onclick="deleteRow(this)">Delete</button></td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>James</td>
+    <td>8</td>
+    <td><button  onclick="deleteRow(this)">Delete</button></td>
+  </tr>
+</table>
+    <img 
+  src="nature1.jpg" 
+  width="200"
+  onmouseover="changeImage(this)"
+  onmouseout="resetImage(this)"
+>
+<h2>Q5: Simple Counter</h2>
+
+<div id="counterDisplay">0</div>
+
+
+<button id="increaseBtn" class="counter-btn">Increase</button>
+<button id="decreaseBtn" class="counter-btn">Decrease</button>
+
+
     <script src="app.js"></script>
 </body>
 </html>
